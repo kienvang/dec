@@ -13,7 +13,7 @@
 }
 
 body{
-    font-size: 16px;
+    font-size: 14px;
     font-family: Myriad-light;
     color: #000;
 }
@@ -43,7 +43,7 @@ ul{
 
 /* Button */
 .btn{
-    border: 1px solid #808080;
+    border: none;
     border-radius: 3px;
     cursor: pointer;
     font-family: Myriad;
@@ -54,26 +54,27 @@ ul{
 }
 
 .btn-organ{
-    border: 1px solid #f47b50;
     background-color: #f47b50;
     color: #fff;
 }
 
 .btn-green{
-    border: 1px solid #00a99d;
     background-color: #00a99d;
     color: #fff;
 }
 
 .btn-brown{
-    border: 1px solid #603813;
     background-color: #603813;
     color: #fff;
 }
 
 .btn-yellow{
-    border: 1px solid #f9be31;
     background-color: #f9be31;
+    color: #fff;
+}
+
+.btn-blue{
+    background-color: #3fa9f5;
     color: #fff;
 }
 
@@ -108,7 +109,7 @@ header .navbar{
 }
 
 header .navbar-default .navbar-nav li{
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 header .navbar-default .navbar-nav a{
@@ -162,6 +163,7 @@ header .navbar-brand{
 
 .header{
     position: relative;
+    margin-bottom: 25px;
 }
 
 .header_banner{
@@ -191,6 +193,7 @@ header .navbar-brand{
 
 .header_menu .navbar-default .navbar-nav a{
     padding: 2px 0;
+    font-size: 16px;
 }
 
 .header_menu .navbar-default a:after{
@@ -200,10 +203,21 @@ header .navbar-brand{
     width: 100%;
 }
 
-.header_menu .menu.navbar-default a:after{
-    background: none repeat scroll 0 0 #603813;
-    bottom: -10px;
-    height: 3px;
+.header_menu .link{
+    float: right;
+    padding-top: 15px;
+}
+
+.header_menu .link .icon{
+    width: 23px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+.header_menu .link a{
+    margin-left: 15px;
 }
 
 .header_avatar{
@@ -215,6 +229,13 @@ header .navbar-brand{
 .header_avatar > div{
     background-color: #f4f0eb;
     padding: 4px;
+}
+
+.header_avatar a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 99;
 }
 
 .header_info{
@@ -269,6 +290,23 @@ header .navbar-brand{
 .header_info .act a{
     margin-left: 15px;
     font-family: Myriad-bold;
+}
+
+.header_manage .header_menu{
+    padding-left: 0;
+    background-color:#f9be31;
+}
+
+.header_manage .navbar-default a:after{
+    background: none repeat scroll 0 0 #603813;
+    bottom: -10px;
+    height: 3px;
+    left: 0;
+    width: 100%;
+}
+
+.header_manage .navbar-default .navbar-nav a{
+    color: #fff;
 }
 
 footer{
@@ -526,6 +564,37 @@ span.icon{
 .icon-h-engineer{
     background: url('../images/icon-h-engineer.png') no-repeat center center transparent;
 }
+
+.icon-camera{
+    background: url('../images/icon-camera.png') no-repeat center center transparent;
+    width: 25px;
+    height: 18px;
+    display: inline-block;
+}
+
+.icon-pointer{
+    background: url('../images/icon-pointer.png') no-repeat center center transparent;
+}
+
+.icon-mail{
+    background: url('../images/icon-mail.png') no-repeat center center transparent;
+}
+
+.icon-fax{
+    background: url('../images/icon-fax.png') no-repeat center center transparent;
+}
+
+.icon-phone{
+    background: url('../images/icon-phone.png') no-repeat center center transparent;
+}
+
+.icon-phone0{
+    background: url('../images/icon-phone0.png') no-repeat center center transparent;
+}
+
+.icon-world{
+    background: url('../images/icon-world.png') no-repeat center center transparent;
+}
 /* end Home */
 
 /* Slick */
@@ -624,9 +693,15 @@ span.icon{
 /* end Avatar */
 
 /* --- */
+.pull{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+
 .list-item{
-    text-align: center;
     margin-bottom: 25px;
+    border: 1px solid #ccc;
 }
 
 .list-item img{
@@ -634,14 +709,14 @@ span.icon{
 }
 
 .list-item p{
-    margin: 0;
+    margin: 0 10px;
     line-height: 28px;
     color: #666;
 }
 
 .list-item p.title{
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
     font-family: Myriad;
 }
@@ -649,6 +724,19 @@ span.icon{
 .list-item p.description{
     text-align: justify;
     line-height: 24px;
+}
+
+.list-item .slide{
+    cursor: pointer;
+}
+
+.list-count{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.list-image-slide{
+    display: none;
 }
 
 .catalog .header{
@@ -692,6 +780,36 @@ span.icon{
     border-radius: 50%;
 }
 
+.nav-catalog .header{
+    font-weight: bold;
+    color: #f9be32;
+    font-size: 18px;
+}
+
+.content-detail img{
+    display: block;
+    margin: 0 auto 5px;
+    max-width: 100%;
+}
+
+.form-contact input[type=text], .form-contact textarea{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-contact p.title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-contact .icon{
+    background-position: center 5px;
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    width: 25px;
+}
 /* --- */
 
 @media (min-width: 1200px) {

@@ -38,47 +38,122 @@
                     </div>
                 </div>
             </nav>
-            <div class="banner">
-                <div class="profile">
-                    <div class="avatar"><div><div><img src="images/image08.jpg"></div></div></div>
-                    <h2>Công ty thiết kế xây dựng Anpha</h2>
+            <div class="header">
+                <div class="header_banner">
+                    <div class="banner">
+                        <img src="images/banner02.jpg">
+                    </div>
+                    <div class="header_avatar">
+                        <a href="#" class="icon icon-camera"></a>
+                        <div>
+                            <img src="images/image13.jpg">
+                        </div>
+                    </div>
+                    <div class="header_info">
+                        <h1>ELSA INTERIOR DESIGN</h1>
+                        <div class="rating">
+                            <div class="text">Pro</div>
+                            <div class="img">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                            </div>
+                        </div>
+                        <div class="url">
+                            <a href="#" class="color-white">20 Nhận xét</a>
+                            <a href="#" class="color-organ">Đánh giá</a>
+                        </div>
+                        <div class="act">
+                            <a href="#" class="btn btn-green">Tin nhắn</a>
+                            <a href="#" class="btn btn-organ">Follow</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="page.html">Giới thiệu</a></li>
+                                    <li><a href="project.html">Dự án</a></li>
+                                    <li><a href="blog.html">Ý tưởng</a></li>
+                                    <li><a href="#">Nhận xét</a></li>
+                                    <li><a href="#">Hỏi đáp</a></li>
+                                    <li class="active"><a href="contact.html">Liên hệ</a></li>
+                                </ul>
+                                <div class="link">
+                                    <a href="#"><i class="icon icon-phone0"></i>(+84) 123456789</a>
+                                    <a href="#"><i class="icon icon-world"></i>Website</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <nav class="menu navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Dự án</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li class="active"><a href="#">Liên hệ</a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </nav>
         </div>
     </header>
     <div class="container">
-        <div class="wrapper row-home-bg">
+        <div class="wrapper row-bg">
             <div class="row">
                 <div class="col-sm-6">
                     <p class="title-small">We'd love to hear from you</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <div class="row form-contact">
+                        <div class="col-xs-6">
+                            <div class="icon icon-pointer"></div>
+                            <p class="title">Address</p>
+                            <p>Pho duc chinh</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon icon-phone"></div>
+                            <p class="title">Phone</p>
+                            <p>08 0908555</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon icon-fax"></div>
+                            <p class="title">Fax</p>
+                            <p>08 0908555</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon icon-mail"></div>
+                            <p class="title">Email</p>
+                            <p>no-reply@noreply.com</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <form class="form-contact">
-                        <div class="form-control">
-                            <input>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-brown">Send</button>
                         </div>
                     </form>
                 </div>
@@ -130,10 +205,10 @@
 
     <script type="text/javascript">
         $(function(){
-            $('.blog').slick({
+            $('.photo').slick({
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 4,
+                slidesToScroll: 4,
                 //autoplay: true,
                 autoplaySpeed: 5000,
                 arrows:true
