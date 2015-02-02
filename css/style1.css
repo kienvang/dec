@@ -41,55 +41,6 @@ ul{
     padding: 15px 45px;
 }
 
-/* Button */
-.btn{
-    border: 1px solid #808080;
-    border-radius: 3px;
-    cursor: pointer;
-    font-family: Myriad;
-}
-
-.btn:hover{
-    color: #fff;
-}
-
-.btn-organ{
-    border: 1px solid #f47b50;
-    background-color: #f47b50;
-    color: #fff;
-}
-
-.btn-green{
-    border: 1px solid #00a99d;
-    background-color: #00a99d;
-    color: #fff;
-}
-
-.btn-brown{
-    border: 1px solid #603813;
-    background-color: #603813;
-    color: #fff;
-}
-
-.btn-yellow{
-    border: 1px solid #f9be31;
-    background-color: #f9be31;
-    color: #fff;
-}
-
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus{
-    outline: none;
-}
-
-.color-white, .color-white:hover{
-    color: #fff;
-}
-
-.color-organ, .color-organ:hover{
-    color: #f47b50;
-}
-/* end Button */
-
 /* Header */
 header{
 
@@ -118,7 +69,7 @@ header .navbar-default .navbar-nav a{
     font-family: Myriad-light;
 }
 
-header .navbar-default a:after{
+header .navbar-default .navbar-nav a:after, header .navbar-default .navbar-nav .active a:after{
     background: none repeat scroll 0 0 #f9be31;
     transform: scale(0);
     transition: all 0.3s linear 0s;
@@ -130,7 +81,7 @@ header .navbar-default a:after{
     width: 60%;
 }
 
-header .navbar-default .active a:after, header .navbar-default .navbar-nav li:hover a:after{
+header .navbar-default .navbar-nav .active a:after, header .navbar-default .navbar-nav li:hover a:after{
     transform: scale(1);
 }
 
@@ -148,6 +99,39 @@ header .navbar-brand{
     padding: 15px 15px 0;
 }
 
+header .menu{
+    background-color: #f9be31;
+    color: #fff;
+    padding-top: 0px;
+    min-height: auto;
+}
+
+header .menu.navbar-default .navbar-nav a{
+    color: #fff;
+    padding: 0;
+}
+
+header .menu.navbar-default .navbar-nav a:after, header .menu.navbar-default .navbar-nav .active a:after{
+    background: none repeat scroll 0 0 #603813;
+    bottom: -10px;
+    height: 3px;
+    left: 0;
+    width: 100%;
+}
+
+header .menu.navbar-default .navbar-nav .active a:after, header .menu.navbar-default .navbar-nav li:hover a:after{
+    transform: scale(1);
+}
+
+header .menu.navbar-default .navbar-nav .active a, header .menu.navbar-default .navbar-nav .active a:hover, header .menu.navbar-default .navbar-nav .active a:focus{
+    background-color: transparent;
+    color: #fff;
+}
+
+header .menu .navbar-nav{
+    padding-top: 0px;
+}
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
     background-color: rgba(96,56,19,0.2);
 }
@@ -158,117 +142,6 @@ header .navbar-brand{
 
 .navbar-default .navbar-toggle{
     border-color: #fff;
-}
-
-.header{
-    position: relative;
-}
-
-.header_banner{
-    width: 100%;
-    position: relative;
-}
-
-.header_banner .banner{
-    width: 100%;
-    overflow: hidden;
-}
-
-.header_menu{
-    background-color: #f4f0eb;
-    padding-left: 190px;
-    width: 100%;
-}
-
-.header_menu .navbar-default{
-    padding-top: 0px;
-    min-height: auto;
-}
-
-.header_menu .navbar-nav{
-    padding-top: 0px;
-}
-
-.header_menu .navbar-default .navbar-nav a{
-    padding: 2px 0;
-}
-
-.header_menu .navbar-default a:after{
-    bottom: -10px;
-    height: 2px;
-    left: 0;
-    width: 100%;
-}
-
-.header_menu .menu.navbar-default a:after{
-    background: none repeat scroll 0 0 #603813;
-    bottom: -10px;
-    height: 3px;
-}
-
-.header_avatar{
-    position: absolute;
-    bottom: -33px;
-    left: 20px;
-}
-
-.header_avatar > div{
-    background-color: #f4f0eb;
-    padding: 4px;
-}
-
-.header_info{
-    position: absolute;
-    height: 155px;
-    bottom: 0px;
-    padding-left: 234px;
-    font-family: Myriad-bold;
-    width: 100%;
-    padding-top: 50px;
-}
-
-.header_info .rating{
-    clear: both;
-    display: inline-block;
-}
-
-.header_info .rating .text{
-    background-color: #dfdeda;
-    border: 2px solid #fff;
-    border-radius: 2px;
-    text-align: center;
-    width: 61px;
-    height: 31px;
-    overflow: hidden;
-    color: #fff;
-
-    float: left;
-    margin-right: 15px;
-}
-
-.header_info .rating .img{
-    float: left;
-}
-
-.header_info h1{
-    font-size: 26px;
-    color: #fff;
-    font-family: Myriad;
-}
-
-.header_info .url a{
-    margin-right: 15px;
-}
-
-.header_info .act{
-    position: absolute;
-    top: 0px;
-    right: 25px;
-}
-
-.header_info .act a{
-    margin-left: 15px;
-    font-family: Myriad-bold;
 }
 
 footer{
@@ -295,7 +168,40 @@ footer .footer-header{
 }
 /* end Header */
 
+/* Button */
+.btn{
+    border: 1px solid #808080;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Myriad;
+}
 
+.btn-organ{
+    border: 1px solid #f47b50;
+    background-color: #f47b50;
+    color: #fff;
+}
+
+.btn-brown{
+    border: 1px solid #603813;
+    background-color: #603813;
+    color: #fff;
+}
+
+.btn-yellow{
+    border: 1px solid #f9be31;
+    background-color: #f9be31;
+    color: #fff;
+}
+
+.btn-organ:hover, .btn-yellow:hover{
+    color: #fff;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus{
+    outline: none;
+}
+/* end Button */
 
 /* General */
 .title{
@@ -303,7 +209,6 @@ footer .footer-header{
     font-size: 28px;
     position: relative;
     font-family: Myriad;
-    margin-bottom: 15px;
 }
 
 .title-small{
@@ -463,11 +368,8 @@ span.icon{
     width: 100%;
 }
 
-.row-home-bg, .row-bg{
-    background-color: #f4f0eb;
-}
-
 .row-home-bg{
+    background-color: #f4f0eb;
     padding: 5px;
 }
 
@@ -623,6 +525,37 @@ span.icon{
 }
 /* end Avatar */
 
+/* Banner */
+.banner{
+    height: 128px;
+    background: url('../images/banner01.jpg') no-repeat center center transparent;
+    overflow: hidden;
+}
+
+.banner .profile{
+    clear: both;
+    height: 100%;
+}
+
+.banner .profile .avatar{
+    border-color: #fff;
+    float: left;
+    height: 110px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 110px;
+}
+
+.banner .profile h2{
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+    top: 90px;
+    color: #fff;
+}
+/* end Banner */
+
 /* --- */
 .list-item{
     text-align: center;
@@ -687,9 +620,8 @@ span.icon{
     color: #fff;
 }
 
-.member-list img{
-    width: 100%;
-    border-radius: 50%;
+.catalog .list{
+
 }
 
 /* --- */
@@ -706,9 +638,6 @@ span.icon{
     }
     .main-menu .nav > li{
         display: inline-block;
-    }
-    .header_menu{
-        padding-left: inherit;
     }
 }
 
