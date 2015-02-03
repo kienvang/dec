@@ -13,6 +13,9 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="plugin/ib.plugins.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -161,7 +164,9 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <img src="images/image12.jpg" width="100%">
+                <div style="width: 100%; height: 350px" id="map-canvas">
+
+                </div>
             </div>
         </div>
     </div>
@@ -203,24 +208,12 @@
         </footer>
     </div>
 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?language=vi&key=AIzaSyD7CZGAmtI0TR4m6cGvSN67lxdagDaGmVk"></script>
+    <script type="text/javascript" src="plugin/markerwithlabel.js"></script>
     <script type="text/javascript">
-        $(function(){
-            $('.photo').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                //autoplay: true,
-                autoplaySpeed: 5000,
-                arrows:true
-            });
-
-            $('.customer').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                //autoplay: true,
-                autoplaySpeed: 5000,
-                arrows:true
+        $(function () {
+            $('#map-canvas').ibmap({
+                draggable: false
             });
         });
     </script>

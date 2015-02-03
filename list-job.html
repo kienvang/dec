@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="plugin/select2/css/select2.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="plugin/select2/js/select2.min.js"></script>
 </head>
 <body>
     <header>
@@ -42,6 +42,7 @@
                 <div class="header_banner">
                     <div class="banner">
                         <img src="images/banner01.jpg">
+                        <h2>Tài khoản cá nhân</h2>
                     </div>
                 </div>
                 <div class="header_menu">
@@ -77,8 +78,229 @@
     </header>
     <div class="container manage">
         <div class="wrapper">
-            <form>
-                Loại dịch vụ
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Loại dịch vụ</label>
+                    <div class="col-sm-4">
+                        <select class="form-control select">
+                            <option>Dich vu a</option>
+                            <option>Dich vu b</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Mã</th>
+                <th>Loại</th>
+                <th>Bất động sản</th>
+                <th>Chi phí</th>
+                <th>Địa điểm</th>
+                <th>Ngày tạo</th>
+                <th>Trạng thái</th>
+                <th>Giá Bid</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>DE001</td>
+                <td>Thiết kế nội thất</td>
+                <td>Căn hộ</td>
+                <td>10.000.000</td>
+                <td>Quận 2, TpHCM</td>
+                <td>20/01/2015</td>
+                <td>Đang Bid</td>
+                <td>100.000</td>
+                <td><a href="#" class="btn btn-organ">Bid</a></td>
+            </tr>
+            <tr>
+                <td>DE001</td>
+                <td>Thiết kế nội thất</td>
+                <td>Căn hộ</td>
+                <td>10.000.000</td>
+                <td>Quận 2, TpHCM</td>
+                <td>20/01/2015</td>
+                <td>Đang Bid</td>
+                <td>100.000</td>
+                <td><a href="#" class="btn btn-organ">Bid</a></td>
+            </tr>
+            <tr>
+                <td>DE001</td>
+                <td>Thiết kế nội thất</td>
+                <td>Căn hộ</td>
+                <td>10.000.000</td>
+                <td>Quận 2, TpHCM</td>
+                <td>20/01/2015</td>
+                <td>Đang Bid</td>
+                <td>100.000</td>
+                <td><a href="#" class="btn btn-organ">Bid</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="wrapper">
+            <form class="form-horizontal">
+                <p class="header">Thông tin cá nhân</p>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Bạn là chủ nhà hay đơn vị cung cấp dịch vụ</label>
+                    <div class="col-sm-4">
+                        <select class="form-control select">
+                            <option>Data A</option>
+                            <option>Data B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Họ và tên</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Tên công ty</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Địa chỉ</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Thành phố/Tỉnh</label>
+                    <div class="col-sm-4">
+                        <select class="form-control select">
+                            <option>Hà Nội</option>
+                            <option>TP Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Quận/Huyện</label>
+                    <div class="col-sm-4">
+                        <select class="form-control select">
+                            <option>Quận 1</option>
+                            <option>Quận 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Điện thoại</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Website</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <p class="header">Giới thiệu</p>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Giới thiệu</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Năm thành lập</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Số dự án</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Số khách hàng</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Hình ảnh công ty</label>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Logo công ty</label>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div>
+                    <p class="header">Thành viên <button class="btn btn-blue">Thêm</button></p>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Họ tên</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Chức vụ</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Avatar</label>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div>
+                    <p class="header">Dự án <button class="btn btn-blue">Thêm</button></p>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Tên dự án</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Mô tả</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Hình ảnh</label>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div>
+                    <p class="header">Ý tưởng <button class="btn btn-blue">Thêm</button></p>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Tiêu đề</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Nội dung</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Hình ảnh</label>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -119,5 +341,10 @@
             </div>
         </footer>
     </div>
+<script type="text/javascript">
+    $(function(){
+        $('.select').select2();
+    });
+</script>
 </body>
 </html>
